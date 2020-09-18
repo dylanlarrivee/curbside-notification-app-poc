@@ -1,0 +1,226 @@
+
+.header {
+  align-items: center;
+  background-color: #333;
+  box-shadow: none;
+  display: flex;
+  height: 60px!important;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  /*z-index: 10;*/
+}
+
+#menu {
+  margin-top: -2.2em;
+  position:fixed;
+  width:86%;
+}
+
+#menu ul li { padding: 0px; }
+
+#menu > ul > li { display: inline-block; }
+
+#menu ul li a {
+display: block;
+color: #ccc;
+font-size: 100%;
+text-decoration: none;
+transition: all 0.3s;
+}
+
+#menu ul li a:hover {
+background: hsl(0, 0%, 92%);
+color: #0da6ac;
+}
+
+#menu ul li.hover > a {
+background: hsl(0, 0%, 92%);
+color: #0da6ac;
+}
+
+#menu ul li a:focus {
+background-color: #0da6ac;
+color: #fff;
+}
+#menu ul li.focus > a {
+background: hsl(0, 0%, 92%);
+color: #0da6ac;
+}
+
+#menu ul li > a { padding: 1.25em 1em; }
+
+#menu ul ul {
+display: none;
+min-width: 160px;
+position: absolute;
+top: 100%;
+}
+
+#menu ul li:hover > ul { display: block; }
+
+#menu ul ul > li { position: relative; }
+
+#menu ul ul > li a {
+padding: 10px 15px;
+height: auto;
+}
+
+#menu ul ul > li a:hover {
+background: hsl(0, 0%, 92%);
+color: #0da6ac;
+}
+
+#menu ul ul ul {
+left: 100%;
+position: absolute;
+top: 0;
+}
+
+.sidebarMenuInner{
+  padding-left:0;
+}
+.active-nav {
+  background-color: #0DA6AC;
+  color: #fff;
+}
+
+@media all and (max-width: 34.688em) {/*555px*/
+  .header {
+    /*position: relative;*/
+    top: .1em;
+  }
+  #menu {
+      background: #333;
+      height: 100%;
+      left: 0;
+      margin-top: -1.2em;
+      position: fixed;
+      transform: translateX(-250px);
+      transition: transform 250ms ease-in-out;
+      width: 250px;
+  }
+  .sidebarMenuInner{
+      border-top: 1px solid rgba(255, 255, 255, 0.10);
+      margin:0;
+      padding:0;
+  }
+  .sidebarMenuInner li{
+      border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+      color: #fff;
+      cursor: pointer;
+      list-style: none;
+      padding: 20px;
+      width:100%;
+  }
+  .sidebarMenuInner li span{
+      color: rgba(255, 255, 255, 0.50);
+      display: block;
+      font-size: 14px;
+  }
+  .sidebarMenuInner li a{
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+  }
+  input[type="checkbox"]:checked ~ #menu {
+      transform: translateX(0);
+  }
+
+  input[type=checkbox] {
+      box-sizing: border-box;
+      display: none;
+      transition: all 0.3s;
+  }
+  .icon-toggle {
+      box-sizing: border-box;
+      cursor: pointer;
+      left: 15px;
+      height: 22px;
+      position: absolute;
+      transition: all 0.3s;
+      top: 22px;
+      width: 22px;
+      z-index: 99;
+  }
+  .spinner {
+      background-color: #fff;
+      box-sizing: border-box;
+      height: 3px;
+      position: absolute;
+      transition: all 0.3s;
+      width: 100%;
+  }
+  .horizontal {
+      box-sizing: border-box;
+      float: left;
+      margin-top: 3px;
+      position: relative;
+      transition: all 0.3s;
+  }
+  .diagonal.part-1 {
+      box-sizing: border-box;
+      float: left;
+      position: relative;
+      transition: all 0.3s;
+  }
+  .diagonal.part-2 {
+      box-sizing: border-box;
+      float: left;
+      margin-top: 3px;
+      position: relative;
+      transition: all 0.3s;
+  }
+  input[type=checkbox]:checked ~ .icon-toggle > .horizontal {
+      box-sizing: border-box;
+      opacity: 0;
+      transition: all 0.3s;
+  }
+  input[type=checkbox]:checked ~ .icon-toggle > .diagonal.part-1 {
+      box-sizing: border-box;
+      margin-top: 8px;
+      transition: all 0.3s;
+      transform: rotate(135deg);
+  }
+  input[type=checkbox]:checked ~ .icon-toggle > .diagonal.part-2 {
+      box-sizing: border-box;
+      margin-top: -9px;
+      transition: all 0.3s;
+      transform: rotate(-135deg);
+  }
+}
+
+.login {
+align-items: center;
+display: flex;
+}
+
+.login a {
+display: block;
+text-decoration: none;
+color: #ccc;
+font-size: 100%;
+padding:1.3em 2em;
+transition: all 0.3s;
+}
+
+.login a:hover {
+background: hsl(0, 0%, 92%);
+color: #0da6ac;
+}
+
+@media all and (max-width: 34.688em) {/*555px*/
+.login {
+  display: block;
+}
+}
+
+
+/* Dylan added for the current active route */
+.active-nav {
+    background-color: #0da6ac;
+    color: #fff;
+}

@@ -1,0 +1,46 @@
+.admin-container {
+	border:1px solid #ccc;
+	border-radius: .25em;
+	display: flex;
+	justify-content: center;
+	margin:4em auto;
+	max-width: 600px;
+}
+.admin-info {
+ 	padding:0 4em;
+ 	padding-bottom:2em;
+	width: 100%;
+}
+@media all and (max-width: 45em) {/*720pxpx*/
+	.admin-info {
+		width:80%;
+	}
+}
+
+/*------ STATUS ONE ------*/
+.form-update label, input {
+	width:94%;
+}
+.form-update label {
+	padding-bottom: .5em;
+}
+.form-update input {
+	border:1px solid #ccc;
+	border-radius: .25em;
+	margin-top: .5em;
+	padding:1em;
+}
+.form-update div {
+	margin-bottom:1em;
+}
+.help-container {
+	margin:2em 0;
+}
+
+/*-------STATUS TWO-------*/
+.input-add-profile {
+	border:1px solid #ccc;
+	border-radius: .25em;
+	margin-top: .5em;
+	padding:1em;
+}

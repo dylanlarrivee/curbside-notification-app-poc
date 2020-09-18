@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.628f9ac2.chunk.css",
+    "main.js": "/static/js/main.ce117d71.chunk.js",
+    "main.js.map": "/static/js/main.ce117d71.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.80bd2154.js",
+    "runtime-main.js.map": "/static/js/runtime-main.80bd2154.js.map",
+    "static/js/2.bf78553c.chunk.js": "/static/js/2.bf78553c.chunk.js",
+    "static/js/2.bf78553c.chunk.js.map": "/static/js/2.bf78553c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b7d094e79233d6b75c4c92a400ea2a9f.js": "/precache-manifest.b7d094e79233d6b75c4c92a400ea2a9f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.628f9ac2.chunk.css.map": "/static/css/main.628f9ac2.chunk.css.map",
+    "static/js/2.bf78553c.chunk.js.LICENSE.txt": "/static/js/2.bf78553c.chunk.js.LICENSE.txt",
+    "static/media/ShawScott_Logo_Gradient.png": "/static/media/ShawScott_Logo_Gradient.44fdb4aa.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80bd2154.js",
+    "static/js/2.bf78553c.chunk.js",
+    "static/css/main.628f9ac2.chunk.css",
+    "static/js/main.ce117d71.chunk.js"
+  ]
+}

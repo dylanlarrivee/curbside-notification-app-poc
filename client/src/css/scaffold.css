@@ -1,0 +1,143 @@
+.flex--wrap {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+main {
+	margin:1em;
+	margin-top:5em;
+}
+
+/*------DATA TABLE--------*/
+.table-container, .table-container-profile {
+	background-color: #ccc;
+	display: grid;
+	grid-gap: .1em;
+	margin-bottom:.5em;
+	padding:.1em;
+}
+/* use these classes to define columns in desktop*/
+.col-4 {
+	grid-template-columns: 28% 17% 32% auto;
+}
+.col-5 {
+	grid-template-columns: 24% 17% 10% 29% auto;
+}
+.col-6 {
+	grid-template-columns: 20% 11% 10% 15% 26% auto;
+}
+
+
+.table-item {
+	background-color: #fff;
+	padding:.5em;
+}
+.table-item:last-child {
+	padding:0 .5em;
+}
+.table-item-header {
+	background-color: hsl(0, 0%, 92%);;
+	font-weight: bold;
+	padding:.5em;
+}
+
+@media all and (max-width: 45em) {/*720pxpx*/
+	.table-container {
+		grid-template-columns: 45% auto;
+	}
+	.table-item-header {
+		grid-column: 1 / 2;
+	}
+	.table-header-00 {
+		grid-row: 1 / 2;
+	}
+	.table-header-01 {
+		grid-row: 2 / 3;
+	}
+	.table-header-02 {
+		grid-row: 3 / 4;
+	}
+	.table-header-03 {
+		grid-row: 4 / 5;
+	}
+	.table-header-04 {
+		grid-row: 5 / 6;
+	}
+
+	.table-item {
+		grid-column:  2 / 3;
+	}
+	.table-item-00 {
+		grid-row: 1 / 2;
+	}
+	.table-item-01 {
+		grid-row: 2 / 3;
+	}
+	.table-item-02 {
+		grid-row: 3 / 4;
+	}
+	.table-item-03 {
+		grid-row: 4 / 5;
+	}
+	.table-item-04 {
+		grid-row: 5 / 6;
+	}
+}
+
+/*---------- admin tables -----------*/
+.table-container-profile {
+	grid-template-columns: 30% auto;
+}
+.table-item-header-profile {
+	background-color: hsl(0, 0%, 92%);;
+	font-weight: bold;
+	padding:.5em;
+	grid-column: 1 / 2;
+}
+.table-header-01-profile {
+	grid-row: 1 / 2;
+}
+.table-header-02-profile {
+	grid-row: 2 / 3;
+}
+.table-header-03-profile {
+	grid-row: 3 / 4;
+}
+.table-header-04-profile {
+	grid-row: 4 / 5;
+}
+.table-header-05-profile {
+	grid-row: 5 / 6;
+}
+.table-header-06-profile {
+	grid-row: 6 / 7;
+}
+
+.table-item-profile {
+	background-color: #fff;
+	grid-column:  2 / 3;
+	padding:.5em;
+}
+.table-item-01-profile {
+	grid-row: 1 / 2;
+}
+.table-item-02-profile {
+	grid-row: 2 / 3;
+}
+.table-item-03-profile {
+	grid-row: 3 / 4;
+}
+.table-item-04-profile {
+	grid-row: 4 / 5;
+}
+.table-item-05-profile {
+	grid-row: 5 / 6;
+}
+.table-item-06-profile {
+	grid-row: 6 / 7;
+}
+
+

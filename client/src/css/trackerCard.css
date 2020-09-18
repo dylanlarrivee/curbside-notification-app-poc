@@ -1,0 +1,48 @@
+/* Mood tracker card css */
+#thumbnail {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+      0 6px 6px rgba(0, 0, 0, 0.23);
+      margin: auto; 
+  }
+  
+  .trackerCard {
+    width:40%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 50px;
+    padding: 10px 10px 10px 10px;
+    
+  }
+  
+  h2.trackerCard {
+    color: #fff;
+    font-weight: 300;
+  }
+  div.trackerCard {
+    color: #ccc;
+    font-weight: 300;
+    margin: 6px 0;
+  }
+  p.trackerCard {
+    color: #fff;
+    font-weight: 300;
+  }
+
+  @media screen and (max-width: 600px) {
+    .trackerCard {
+      width:90%;
+
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .trackerCard {
+      width:90%;
+
+    }
+  }
+  
+  input[type="radio"]{
+    margin: 0 5px 0 5px;
+  }
+    

@@ -1,0 +1,10 @@
+node_modules
+node_modules/
+.env
+client/.env
+old
+database-scripts/rds-combined-ca-bundle.pem
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
